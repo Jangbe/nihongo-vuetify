@@ -1,7 +1,7 @@
 <template>
 <div>
     <v-parallax src="/img/parallax1.jpg"/>
-    <div class="section white" style="height: 200px;">
+    <div class="section white" style="height: 100%;">
         <div class="container">
             <h2 class="text-center mt-6"><b>みんな　の　日本語</b></h2>
             <h5><b>Kata Pengantar</b></h5>

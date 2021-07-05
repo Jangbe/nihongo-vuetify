@@ -8,7 +8,7 @@
             <v-toolbar-title><h1>日本語</h1></v-toolbar-title>
         </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" absolute bottom temporary>
+        <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list nav dense >
             <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4" >
                 <v-list-item v-for="item in navbars" :key="item.title" :to="item.link" style="text-decoration: none">

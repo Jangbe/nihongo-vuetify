@@ -20,4 +20,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['namespace'=>'App\Http\Controllers'],function(){
     Route::get('huruf','HurufController@index');
+    Route::get('huruf/quizz/hasil-test', 'HurufController@result');
+    Route::get('huruf/quizz/{no?}', 'HurufController@get_quizz');
+    Route::post('huruf/quizz', 'HurufController@set_quizz');
+    Route::post('huruf/quizz/jawab/{no}', 'HurufController@jawab');
+    Route::post('huruf/quizz/selesai', 'HurufController@selesai');
 });

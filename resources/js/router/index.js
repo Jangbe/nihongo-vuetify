@@ -10,7 +10,16 @@ export default{
         },
         {
             path: '/huruf-jepang',
-            component: require('../views/user/HurufJepang').default,
+            component: require('../views/user/huruf/HurufJepang').default,
+        },
+        {
+            path: '/huruf-jepang/test/:no?',
+            props: true,
+            component: require('../views/user/huruf/QuizHurufJepang').default,
+        },
+        {
+            path: '/huruf-jepang/hasil-test',
+            component: require('../views/user/huruf/HasilTest').default
         }
     ]
 }
